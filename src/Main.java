@@ -19,7 +19,7 @@ public class Main {
         personList.add(new Person("Ilona", 24));
         personList.add(new Person("Kate", 23));
 
-        personList.stream().forEach (p -> System.out.println(p));
+        personList.stream().forEach (System.out::println);
 
 
 
