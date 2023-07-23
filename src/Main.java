@@ -23,6 +23,7 @@ public class Main {
         personList.stream()
                 .filter(person -> person.getAge() >=23)
                 .sorted(Comparator.comparing(Person::getName))
+                .mapToInt(person -> person.getAge())
                 .forEach (System.out::println);
 
 
