@@ -21,6 +21,7 @@ public class Main {
 
         personList.stream()
                 .filter(person -> person.getAge() >=23)
+                .sorted((p1,p2) -> p1.getName().compareTo(p2.getName()))
                 .forEach (System.out::println);
 
 
