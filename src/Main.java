@@ -19,7 +19,9 @@ public class Main {
         personList.add(new Person("Ilona", 24));
         personList.add(new Person("Kate", 23));
 
-        personList.stream().forEach (System.out::println);
+        personList.stream()
+                .filter(person -> person.getAge() >=23)
+                .forEach (System.out::println);
 
 
 
